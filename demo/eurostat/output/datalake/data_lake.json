@@ -1,0 +1,1178 @@
+[
+  {
+    "file_name": "AACT_ALI02_data.csv",
+    "file_path": "/Users/matteocastagna/Documents/Universit\u00e0/Assegno di ricerca 2024:2025/SemLink/demo/eurostat/data/AACT_ALI02_data.csv",
+    "title": "Agricultural labour input statistics: indices",
+    "llm_description": "This dataset contains indices of agricultural labor input statistics, covering various agricultural activities as defined by the NACE Rev. 2 classification. It spans from 1973 to 2024, providing annual data on labor input indices across different geographical regions in Europe. The dataset includes information on the income of units involved in agricultural production, excluding kitchen gardens and certain agricultural services.",
+    "spatial_coverage_llm": null,
+    "temporal_start_date": "1973-01-01T00:00",
+    "temporal_end_date": "2024-01-01T00:00",
+    "data_themes": "Agriculture, fisheries, forestry and food",
+    "coverage_sector": "<p>The sector covers the income of all units involved in agricultural production, even if some of those units have more important economic activities or if the purpose of some others is not commercial. Note, however, that kitchen gardens (producing for own-consumption only) are not included.</p>\n<p>Division 01 of NACE Rev. 2 comprises:</p>\n<p>\u2022Group 01.1: Growing of non-perennial crops;</p>\n<p>\u2022Group 01.2: Growing of perennial crops;</p>\n<p>\u2022Group 01.3: Plant propagation;</p>\n<p>\u2022Group 01.4: Animal production;</p>\n<p>\u2022Group 01.5: Mixed farming;</p>\n<p>\u2022Group 01.6: Support activities to agriculture and post-harvest crop activities;</p>\n<p>\u2022Group 01.7: Hunting, trapping and related service activities.</p>\n<p>The list of agricultural activities characteristic of the EAA corresponds to these seven groups of activities (01.1to 01.7), but with the following caveats:</p>\n<p>- the inclusion of the production of wine and olive oil (exclusively using grapes and olives grown by the same holding),</p>\n<p>- the exclusion of certain activities which, in NACE Rev. 2, are considered as agricultural services (e.g. the operation of irrigation systems - only agricultural contract work is taken into account here).</p>\n<p>The agricultural industry of the EAA differs in some respects from the branch as defined for national accounts purposes. The differences relate to the definition of both characteristic activities and units. They can be summarised as follows:</p>\n<p>EAA agricultural industry =</p>\n<p>NA agricultural branch</p>\n<p>- Production units providing associated agricultural services other than agricultural contract work (i.e. the operation of irrigation systems)</p>\n<p>+ Agricultural separable secondary activities of units whose principal activity is not agricultural</p>\n<p>The NACE-classification (rev2) has been implemented by September 2011 in the ESA and in EAA.</p>",
+    "original_headers": [
+      "DATAFLOW",
+      "LAST UPDATE",
+      "freq",
+      "unit",
+      "itm_newa",
+      "geo",
+      "TIME_PERIOD",
+      "OBS_VALUE",
+      "OBS_FLAG"
+    ],
+    "columns": [
+      {
+        "column_name": "DATAFLOW",
+        "header": "DATAFLOW",
+        "values_sample": [
+          "ESTAT:AACT_ALI02(1.0)"
+        ],
+        "value_stats": {
+          "num_values": 12581,
+          "max_length": 21,
+          "min_length": 21,
+          "avg_length": 21.0,
+          "most_common_values": [
+            "ESTAT:AACT_ALI02(1.0)"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "Identifier for the dataset version and source, indicating the specific data flow, particularly from the European Statistical Agency.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "LAST UPDATE",
+        "header": "LAST UPDATE",
+        "values_sample": [
+          "16/12/24 11:00:00"
+        ],
+        "value_stats": {
+          "num_values": 12581,
+          "max_length": 17,
+          "min_length": 17,
+          "avg_length": 17.0,
+          "most_common_values": [
+            "16/12/24 11:00:00"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The date and time when the dataset was last updated, typically formatted as 'DD/MM/YY HH:MM:SS'.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "freq",
+        "header": "freq",
+        "values_sample": [
+          "A"
+        ],
+        "value_stats": {
+          "num_values": 12581,
+          "max_length": 1,
+          "min_length": 1,
+          "avg_length": 1.0,
+          "most_common_values": [
+            "A"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The frequency of data collection, denoted by 'A' for annual data.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "unit",
+        "header": "unit",
+        "values_sample": [
+          "I05",
+          "I10",
+          "I15"
+        ],
+        "value_stats": {
+          "num_values": 12581,
+          "max_length": 3,
+          "min_length": 3,
+          "avg_length": 3.0,
+          "most_common_values": [
+            "I10",
+            "I15",
+            "I05"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The 'unit' column specifies the unit of measurement for the data, which can include percentages ('PC') or various index codes such as 'I05', 'I10', 'I15', and 'CLV15_EUR_AWU'. These units are used to quantify observation values and indices within the dataset.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "itm_newa",
+        "header": "itm_newa",
+        "values_sample": [
+          "40000",
+          "41000",
+          "42000"
+        ],
+        "value_stats": {
+          "num_values": 12581,
+          "max_length": 5,
+          "min_length": 5,
+          "avg_length": 5.0,
+          "most_common_values": [
+            "40000",
+            "41000",
+            "42000"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "A code representing specific agricultural income indicators or categories within the dataset, such as IND_A_EURO, RFI_AWU_CLV, or numerical codes like '40000', '41000', and '42000', related to various agricultural activities or metrics.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "geo",
+        "header": "geo",
+        "values_sample": [
+          "EL",
+          "DK",
+          "EA",
+          "BE",
+          "EU25",
+          "DE",
+          "CH",
+          "HR",
+          "FI",
+          "EU"
+        ],
+        "value_stats": {
+          "num_values": 12581,
+          "max_length": 14,
+          "min_length": 2,
+          "avg_length": 2.58,
+          "most_common_values": [
+            "BE",
+            "DK",
+            "ES",
+            "FR",
+            "LU",
+            "SE",
+            "UK",
+            "FI",
+            "IT",
+            "PT",
+            "MT",
+            "CH",
+            "NL",
+            "NO",
+            "EL",
+            "AT",
+            "IE",
+            "DE",
+            "EA11",
+            "EA12"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The 'geo' column represents the geographical area or region associated with the data, using standardized country codes. These codes denote specific countries or regions, such as 'RO' for Romania, 'EL' for Greece, 'DK' for Denmark, 'DE' for Germany, 'CH' for Switzerland, 'HR' for Croatia, 'FI' for Finland, and various configurations of the European Union like 'EU15', 'EU25', and 'EA' for the Euro Area.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "TIME_PERIOD",
+        "header": "TIME_PERIOD",
+        "values_sample": [
+          "1974",
+          "1997",
+          "1992",
+          "1999",
+          "2006",
+          "2021",
+          "1994",
+          "2005",
+          "2019",
+          "1978"
+        ],
+        "value_stats": {
+          "num_values": 12581,
+          "max_length": 4,
+          "min_length": 4,
+          "avg_length": 4.0,
+          "most_common_values": [
+            "2007",
+            "2008",
+            "2009",
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2005",
+            "2006",
+            "2020",
+            "2000",
+            "2001",
+            "2002",
+            "2003"
+          ]
+        },
+        "metadata_description": "The period of time or point in time to which the measured observation refers.",
+        "llm_description": "The year or time period to which the observation value pertains and was recorded.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "OBS_VALUE",
+        "header": "OBS_VALUE",
+        "values_sample": [
+          "94.63",
+          "132.12",
+          "71.53",
+          "107.28",
+          "292.44",
+          "151.13",
+          "89.38",
+          "137.35",
+          "75.86",
+          "152.04"
+        ],
+        "value_stats": {
+          "num_values": 12569,
+          "max_length": 6,
+          "min_length": 4,
+          "avg_length": 5.6,
+          "most_common_values": [
+            "100.00",
+            "0.00",
+            "125.00",
+            "103.79",
+            "95.91",
+            "102.96",
+            "108.33",
+            "91.67",
+            "99.56",
+            "98.95",
+            "102.46",
+            "97.80",
+            "101.12",
+            "103.86",
+            "108.14",
+            "124.24",
+            "83.85",
+            "98.19",
+            "95.69",
+            "123.57"
+          ]
+        },
+        "metadata_description": "The value, at a particular period, of a particular variable.",
+        "llm_description": "The observed value representing various economic indicators, including the labor input index, agricultural income, and agricultural labor input, as well as the percentage of enterprises reporting specific reasons for financing outcomes, for a given time period and geographical area. Agricultural labor input is measured in thousands of annual work units.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "OBS_FLAG",
+        "header": "OBS_FLAG",
+        "values_sample": [
+          "e",
+          "z"
+        ],
+        "value_stats": {
+          "num_values": 375,
+          "max_length": 1,
+          "min_length": 1,
+          "avg_length": 1.0,
+          "most_common_values": [
+            "e",
+            "z"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "Flags indicating special conditions or annotations related to the observation, such as 'e' for estimated values, 'd' for data derived from different sources, and 'z' for other specific notes.",
+        "semantic_annotation": null
+      }
+    ],
+    "metadata_description": true,
+    "llm_spatial_coverage": "The dataset covers various European countries and regions, including Greece, Denmark, the Euro Area, Belgium, the European Union, Germany, Switzerland, Croatia, and Finland."
+  },
+  {
+    "file_name": "AACT_EAA06_data.csv",
+    "file_path": "/Users/matteocastagna/Documents/Universit\u00e0/Assegno di ricerca 2024:2025/SemLink/demo/eurostat/data/AACT_EAA06_data.csv",
+    "title": "Economic accounts for agriculture - agricultural income indicators",
+    "llm_description": "This dataset contains economic accounts for agriculture, focusing on agricultural income indicators across various European regions. It includes data from 1973 to 2024, covering different agricultural activities as defined by the NACE Rev. 2 classification. The dataset provides insights into the income of agricultural units, excluding kitchen gardens, and includes specific activities like wine and olive oil production under certain conditions.",
+    "spatial_coverage_llm": null,
+    "temporal_start_date": "1973-01-01T00:00",
+    "temporal_end_date": "2024-01-01T00:00",
+    "data_themes": "Agriculture, fisheries, forestry and food",
+    "coverage_sector": "<p>The sector covers the income of all units involved in agricultural production, even if some of those units have more important economic activities or if the purpose of some others is not commercial. Note, however, that kitchen gardens (producing for own-consumption only) are not included.</p>\n<p>Division 01 of NACE Rev. 2 comprises:</p>\n<p>\u2022Group 01.1: Growing of non-perennial crops;</p>\n<p>\u2022Group 01.2: Growing of perennial crops;</p>\n<p>\u2022Group 01.3: Plant propagation;</p>\n<p>\u2022Group 01.4: Animal production;</p>\n<p>\u2022Group 01.5: Mixed farming;</p>\n<p>\u2022Group 01.6: Support activities to agriculture and post-harvest crop activities;</p>\n<p>\u2022Group 01.7: Hunting, trapping and related service activities.</p>\n<p>The list of agricultural activities characteristic of the EAA corresponds to these seven groups of activities (01.1to 01.7), but with the following caveats:</p>\n<p>- the inclusion of the production of wine and olive oil (exclusively using grapes and olives grown by the same holding),</p>\n<p>- the exclusion of certain activities which, in NACE Rev. 2, are considered as agricultural services (e.g. the operation of irrigation systems - only agricultural contract work is taken into account here).</p>\n<p>The agricultural industry of the EAA differs in some respects from the branch as defined for national accounts purposes. The differences relate to the definition of both characteristic activities and units. They can be summarised as follows:</p>\n<p>EAA agricultural industry =</p>\n<p>NA agricultural branch</p>\n<p>- Production units providing associated agricultural services other than agricultural contract work (i.e. the operation of irrigation systems)</p>\n<p>+ Agricultural separable secondary activities of units whose principal activity is not agricultural</p>\n<p>The NACE-classification (rev2) has been implemented by September 2011 in the ESA and in EAA.</p>",
+    "original_headers": [
+      "DATAFLOW",
+      "LAST UPDATE",
+      "freq",
+      "itm_newa",
+      "unit",
+      "geo",
+      "TIME_PERIOD",
+      "OBS_VALUE",
+      "OBS_FLAG"
+    ],
+    "columns": [
+      {
+        "column_name": "DATAFLOW",
+        "header": "DATAFLOW",
+        "values_sample": [
+          "ESTAT:AACT_EAA06(1.0)"
+        ],
+        "value_stats": {
+          "num_values": 15441,
+          "max_length": 21,
+          "min_length": 21,
+          "avg_length": 21.0,
+          "most_common_values": [
+            "ESTAT:AACT_EAA06(1.0)"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "Identifier for the dataset version and source, indicating the specific data flow, particularly from the European Statistical Agency.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "LAST UPDATE",
+        "header": "LAST UPDATE",
+        "values_sample": [
+          "16/12/24 11:00:00"
+        ],
+        "value_stats": {
+          "num_values": 15441,
+          "max_length": 17,
+          "min_length": 17,
+          "avg_length": 17.0,
+          "most_common_values": [
+            "16/12/24 11:00:00"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The date and time when the dataset was last updated, typically formatted as 'DD/MM/YY HH:MM:SS'.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "freq",
+        "header": "freq",
+        "values_sample": [
+          "A"
+        ],
+        "value_stats": {
+          "num_values": 15441,
+          "max_length": 1,
+          "min_length": 1,
+          "avg_length": 1.0,
+          "most_common_values": [
+            "A"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The frequency of data collection, denoted by 'A' for annual data.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "itm_newa",
+        "header": "itm_newa",
+        "values_sample": [
+          "IND_A_EURO",
+          "IND_B_EURO",
+          "IND_C_EURO",
+          "RFI_AWU_CLV"
+        ],
+        "value_stats": {
+          "num_values": 15441,
+          "max_length": 11,
+          "min_length": 10,
+          "avg_length": 10.17,
+          "most_common_values": [
+            "IND_A_EURO",
+            "IND_C_EURO",
+            "IND_B_EURO",
+            "RFI_AWU_CLV"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "A code representing specific agricultural income indicators or categories within the dataset, such as IND_A_EURO, RFI_AWU_CLV, or numerical codes like '40000', '41000', and '42000', related to various agricultural activities or metrics.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "unit",
+        "header": "unit",
+        "values_sample": [
+          "I05",
+          "I10",
+          "I15",
+          "I_N_1",
+          "CLV15_EUR_AWU",
+          "CLV_I15"
+        ],
+        "value_stats": {
+          "num_values": 15441,
+          "max_length": 13,
+          "min_length": 3,
+          "avg_length": 4.71,
+          "most_common_values": [
+            "I_N_1",
+            "I15",
+            "I10",
+            "I05",
+            "CLV15_EUR_AWU",
+            "CLV_I15"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The 'unit' column specifies the unit of measurement for the data, which can include percentages ('PC') or various index codes such as 'I05', 'I10', 'I15', and 'CLV15_EUR_AWU'. These units are used to quantify observation values and indices within the dataset.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "geo",
+        "header": "geo",
+        "values_sample": [
+          "RO",
+          "BE",
+          "UK",
+          "IT",
+          "EA12",
+          "LU",
+          "LT",
+          "EU15",
+          "EA",
+          "PL"
+        ],
+        "value_stats": {
+          "num_values": 15441,
+          "max_length": 14,
+          "min_length": 2,
+          "avg_length": 2.71,
+          "most_common_values": [
+            "FR",
+            "SE",
+            "FI",
+            "BE",
+            "IT",
+            "DK",
+            "PT",
+            "UK",
+            "LU",
+            "NL",
+            "ES",
+            "IE",
+            "AT",
+            "DE",
+            "EA11",
+            "EA12",
+            "EL",
+            "CH",
+            "SI",
+            "EE"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The 'geo' column represents the geographical area or region associated with the data, using standardized country codes. These codes denote specific countries or regions, such as 'RO' for Romania, 'EL' for Greece, 'DK' for Denmark, 'DE' for Germany, 'CH' for Switzerland, 'HR' for Croatia, 'FI' for Finland, and various configurations of the European Union like 'EU15', 'EU25', and 'EA' for the Euro Area.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "TIME_PERIOD",
+        "header": "TIME_PERIOD",
+        "values_sample": [
+          "1977",
+          "1976",
+          "1990",
+          "2022",
+          "1999",
+          "2004",
+          "2011",
+          "1998",
+          "1989",
+          "2018"
+        ],
+        "value_stats": {
+          "num_values": 15441,
+          "max_length": 4,
+          "min_length": 4,
+          "avg_length": 4.0,
+          "most_common_values": [
+            "2012",
+            "2013",
+            "2014",
+            "2011",
+            "2010",
+            "2009",
+            "2007",
+            "2008",
+            "2006",
+            "2005",
+            "2001",
+            "2004",
+            "2002",
+            "2003",
+            "2016",
+            "2018",
+            "2019",
+            "2015",
+            "2017",
+            "2020"
+          ]
+        },
+        "metadata_description": "The period of time or point in time to which the measured observation refers.",
+        "llm_description": "The year or time period to which the observation value pertains and was recorded.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "OBS_VALUE",
+        "header": "OBS_VALUE",
+        "values_sample": [
+          "32898.24",
+          "106.61",
+          "134.96",
+          "82.46",
+          "99.21",
+          "140.72",
+          "145.78",
+          "58.28",
+          "93.14",
+          "190.86"
+        ],
+        "value_stats": {
+          "num_values": 15441,
+          "max_length": 9,
+          "min_length": 4,
+          "avg_length": 5.76,
+          "most_common_values": [
+            "100.00",
+            "0.00",
+            "106.08",
+            "99.38",
+            "96.05",
+            "88.05",
+            "100.96",
+            "112.90",
+            "100.45",
+            "112.71",
+            "103.44",
+            "95.36",
+            "101.94",
+            "105.04",
+            "105.27",
+            "98.95",
+            "99.02",
+            "106.57",
+            "116.27",
+            "100.71"
+          ]
+        },
+        "metadata_description": "The value, at a particular period, of a particular variable.",
+        "llm_description": "The observed value representing various economic indicators, including the labor input index, agricultural income, and agricultural labor input, as well as the percentage of enterprises reporting specific reasons for financing outcomes, for a given time period and geographical area. Agricultural labor input is measured in thousands of annual work units.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "OBS_FLAG",
+        "header": "OBS_FLAG",
+        "values_sample": [
+          "e",
+          "d",
+          "b"
+        ],
+        "value_stats": {
+          "num_values": 465,
+          "max_length": 1,
+          "min_length": 1,
+          "avg_length": 1.0,
+          "most_common_values": [
+            "e",
+            "d",
+            "b"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "Flags indicating special conditions or annotations related to the observation, such as 'e' for estimated values, 'd' for data derived from different sources, and 'z' for other specific notes.",
+        "semantic_annotation": null
+      }
+    ],
+    "metadata_description": true,
+    "llm_spatial_coverage": "The dataset covers various European countries and regions, including Romania, Belgium, the United Kingdom, Italy, Luxembourg, Lithuania, Poland, and broader regions like the European Union (EU15) and the Euro Area (EA12)."
+  },
+  {
+    "file_name": "ACF_D_EQ1_data.csv",
+    "file_path": "/Users/matteocastagna/Documents/Universit\u00e0/Assegno di ricerca 2024:2025/SemLink/demo/eurostat/data/ACF_D_EQ1_data.csv",
+    "title": "Reasons for partial success or lack of success in obtaining equity finance, by type of enterprise and NACE Rev. 2 (2007-2010)",
+    "llm_description": "This dataset provides insights into the reasons for partial success or lack of success in obtaining equity finance across different types of enterprises and sectors, classified by NACE Rev. 2, over the period from 2007 to 2010. It includes data on various reasons for financing outcomes, categorized by enterprise type and geographical location.",
+    "spatial_coverage_llm": null,
+    "temporal_start_date": "2007-01-01T00:00",
+    "temporal_end_date": "2010-01-01T00:00",
+    "data_themes": "General",
+    "coverage_sector": "<p>The SBS coverage was limited to Sections C to K of NACE Rev.1.1 until 2007. Starting from the reference year 2008 data is available for Sections B to N and Division S95 of NACE Rev.2.</p>\n<p>NACE Rev.2 Section K and NACE Rev.1.1. Section J is only covered partially by the data on insurance services, credit institutions and pension funds (separate metadata files have been compiled)</p>\n<p>Double reported data in NACE Rev.1.1 for the reference year 2008 is available from the second quarter of 2011.</p>\n<p style=\"text-align: justify;\">National Statistical Institutes have provided on a voluntary basis backcasted NACE Rev.2 data for reference years 2005-2007. For countries for which these data were not provided, Eurostat has made estimates based on the conversion of the available NACE Rev.1.1 data. Some activities could not be estimated as they were not covered in the NACE Rev.1.1 data collection. Please note that for the size class data some NACE Rev.2 divisions need to be taken together, especially in the services sector, as in NACE Rev.1.1. there were fewer details available. Size class data on NACE Rev.2 Section M excludes M75 veterinary activities.</p>",
+    "original_headers": [
+      "DATAFLOW",
+      "LAST UPDATE",
+      "freq",
+      "unit",
+      "enterpr",
+      "nace_r2",
+      "reason",
+      "geo",
+      "TIME_PERIOD",
+      "OBS_VALUE",
+      "OBS_FLAG"
+    ],
+    "columns": [
+      {
+        "column_name": "DATAFLOW",
+        "header": "DATAFLOW",
+        "values_sample": [
+          "ESTAT:ACF_D_EQ1(1.0)"
+        ],
+        "value_stats": {
+          "num_values": 5760,
+          "max_length": 20,
+          "min_length": 20,
+          "avg_length": 20.0,
+          "most_common_values": [
+            "ESTAT:ACF_D_EQ1(1.0)"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "Identifier for the dataset version and source, indicating the specific data flow, particularly from the European Statistical Agency.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "LAST UPDATE",
+        "header": "LAST UPDATE",
+        "values_sample": [
+          "22/09/11 23:00:00"
+        ],
+        "value_stats": {
+          "num_values": 5760,
+          "max_length": 17,
+          "min_length": 17,
+          "avg_length": 17.0,
+          "most_common_values": [
+            "22/09/11 23:00:00"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The date and time when the dataset was last updated, typically formatted as 'DD/MM/YY HH:MM:SS'.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "freq",
+        "header": "freq",
+        "values_sample": [
+          "A"
+        ],
+        "value_stats": {
+          "num_values": 5760,
+          "max_length": 1,
+          "min_length": 1,
+          "avg_length": 1.0,
+          "most_common_values": [
+            "A"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The frequency of data collection, denoted by 'A' for annual data.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "unit",
+        "header": "unit",
+        "values_sample": [
+          "PC"
+        ],
+        "value_stats": {
+          "num_values": 5760,
+          "max_length": 2,
+          "min_length": 2,
+          "avg_length": 2.0,
+          "most_common_values": [
+            "PC"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The 'unit' column specifies the unit of measurement for the data, which can include percentages ('PC') or various index codes such as 'I05', 'I10', 'I15', and 'CLV15_EUR_AWU'. These units are used to quantify observation values and indices within the dataset.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "enterpr",
+        "header": "enterpr",
+        "values_sample": [
+          "HG",
+          "OTH",
+          "TOTAL",
+          "YHG"
+        ],
+        "value_stats": {
+          "num_values": 5760,
+          "max_length": 5,
+          "min_length": 2,
+          "avg_length": 3.25,
+          "most_common_values": [
+            "HG",
+            "OTH",
+            "TOTAL",
+            "YHG"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "Type of enterprise, including high growth ('HG'), other ('OTH'), total ('TOTAL'), and young high growth ('YHG').",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "nace_r2",
+        "header": "nace_r2",
+        "values_sample": [
+          "B-E",
+          "B-N_X_K",
+          "F",
+          "G-I_L_N",
+          "J",
+          "M"
+        ],
+        "value_stats": {
+          "num_values": 5760,
+          "max_length": 7,
+          "min_length": 1,
+          "avg_length": 3.33,
+          "most_common_values": [
+            "B-E",
+            "B-N_X_K",
+            "F",
+            "G-I_L_N",
+            "J",
+            "M"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "NACE Rev. 2 classification sections, indicating the economic sectors covered.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "reason",
+        "header": "reason",
+        "values_sample": [
+          "CON",
+          "DEB",
+          "DEV",
+          "EXC",
+          "INA",
+          "OTH"
+        ],
+        "value_stats": {
+          "num_values": 5760,
+          "max_length": 3,
+          "min_length": 3,
+          "avg_length": 3.0,
+          "most_common_values": [
+            "CON",
+            "DEB",
+            "DEV",
+            "EXC",
+            "INA",
+            "OTH"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "Reasons for partial or lack of success in obtaining equity finance, such as conditions ('CON'), debt ('DEB'), development ('DEV'), excessive costs ('EXC'), inadequate information ('INA'), and other reasons ('OTH').",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "geo",
+        "header": "geo",
+        "values_sample": [
+          "LU",
+          "FR",
+          "MT",
+          "FI",
+          "PL",
+          "NL",
+          "BE",
+          "EL",
+          "ES",
+          "LV"
+        ],
+        "value_stats": {
+          "num_values": 5760,
+          "max_length": 2,
+          "min_length": 2,
+          "avg_length": 2.0,
+          "most_common_values": [
+            "BE",
+            "BG",
+            "CY",
+            "DE",
+            "DK",
+            "EL",
+            "ES",
+            "FI",
+            "FR",
+            "IE",
+            "IT",
+            "LT",
+            "LU",
+            "LV",
+            "MT",
+            "NL",
+            "PL",
+            "SE",
+            "SK",
+            "UK"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The 'geo' column represents the geographical area or region associated with the data, using standardized country codes. These codes denote specific countries or regions, such as 'RO' for Romania, 'EL' for Greece, 'DK' for Denmark, 'DE' for Germany, 'CH' for Switzerland, 'HR' for Croatia, 'FI' for Finland, and various configurations of the European Union like 'EU15', 'EU25', and 'EA' for the Euro Area.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "TIME_PERIOD",
+        "header": "TIME_PERIOD",
+        "values_sample": [
+          "2007",
+          "2010"
+        ],
+        "value_stats": {
+          "num_values": 5760,
+          "max_length": 4,
+          "min_length": 4,
+          "avg_length": 4.0,
+          "most_common_values": [
+            "2007",
+            "2010"
+          ]
+        },
+        "metadata_description": "The period of time or point in time to which the measured observation refers.",
+        "llm_description": "The year or time period to which the observation value pertains and was recorded.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "OBS_VALUE",
+        "header": "OBS_VALUE",
+        "values_sample": [
+          "66.7",
+          "25.5",
+          "15.6",
+          "26.7",
+          "42.7",
+          "3.7",
+          "54.4",
+          "15.2",
+          "5.5",
+          "17.9"
+        ],
+        "value_stats": {
+          "num_values": 5760,
+          "max_length": 5,
+          "min_length": 3,
+          "avg_length": 3.25,
+          "most_common_values": [
+            "0.0",
+            "100.0",
+            "50.0",
+            "33.3",
+            "25.0",
+            "16.7",
+            "20.0",
+            "14.3",
+            "12.5",
+            "18.2",
+            "22.2",
+            "42.9",
+            "14.8",
+            "11.1",
+            "60.0",
+            "30.0",
+            "66.7",
+            "23.1",
+            "40.0",
+            "8.3"
+          ]
+        },
+        "metadata_description": "The value, at a particular period, of a particular variable.",
+        "llm_description": "The observed value representing various economic indicators, including the labor input index, agricultural income, and agricultural labor input, as well as the percentage of enterprises reporting specific reasons for financing outcomes, for a given time period and geographical area. Agricultural labor input is measured in thousands of annual work units.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "OBS_FLAG",
+        "header": "OBS_FLAG",
+        "values_sample": [],
+        "value_stats": {
+          "num_values": 0,
+          "max_length": 0,
+          "min_length": 0,
+          "avg_length": 0,
+          "most_common_values": []
+        },
+        "metadata_description": null,
+        "llm_description": "Flags indicating special conditions or annotations related to the observation, such as 'e' for estimated values, 'd' for data derived from different sources, and 'z' for other specific notes.",
+        "semantic_annotation": null
+      }
+    ],
+    "metadata_description": true,
+    "llm_spatial_coverage": "The dataset covers several European countries, including Luxembourg (LU), France (FR), Malta (MT), Finland (FI), Poland (PL), Netherlands (NL), Belgium (BE), Greece (EL), Spain (ES), and Latvia (LV)."
+  },
+  {
+    "file_name": "AACT_ALI01_data.csv",
+    "file_path": "/Users/matteocastagna/Documents/Universit\u00e0/Assegno di ricerca 2024:2025/SemLink/demo/eurostat/data/AACT_ALI01_data.csv",
+    "title": "Agricultural labour input statistics: absolute figures (1 000 annual work units)",
+    "llm_description": "This dataset contains agricultural labor input statistics measured in thousands of annual work units across various European regions from 1973 to 2024. It includes data on different agricultural activities as defined by the NACE Rev. 2 classification, focusing on the labor input required for agricultural production, excluding kitchen gardens. The dataset provides insights into the labor dynamics within the agricultural sector, capturing changes over time and across different geographical areas.",
+    "spatial_coverage_llm": null,
+    "temporal_start_date": "1973-01-01T00:00",
+    "temporal_end_date": "2024-01-01T00:00",
+    "data_themes": "Agriculture, fisheries, forestry and food",
+    "coverage_sector": "<p>The sector covers the income of all units involved in agricultural production, even if some of those units have more important economic activities or if the purpose of some others is not commercial. Note, however, that kitchen gardens (producing for own-consumption only) are not included.</p>\n<p>Division 01 of NACE Rev. 2 comprises:</p>\n<p>\u2022Group 01.1: Growing of non-perennial crops;</p>\n<p>\u2022Group 01.2: Growing of perennial crops;</p>\n<p>\u2022Group 01.3: Plant propagation;</p>\n<p>\u2022Group 01.4: Animal production;</p>\n<p>\u2022Group 01.5: Mixed farming;</p>\n<p>\u2022Group 01.6: Support activities to agriculture and post-harvest crop activities;</p>\n<p>\u2022Group 01.7: Hunting, trapping and related service activities.</p>\n<p>The list of agricultural activities characteristic of the EAA corresponds to these seven groups of activities (01.1to 01.7), but with the following caveats:</p>\n<p>- the inclusion of the production of wine and olive oil (exclusively using grapes and olives grown by the same holding),</p>\n<p>- the exclusion of certain activities which, in NACE Rev. 2, are considered as agricultural services (e.g. the operation of irrigation systems - only agricultural contract work is taken into account here).</p>\n<p>The agricultural industry of the EAA differs in some respects from the branch as defined for national accounts purposes. The differences relate to the definition of both characteristic activities and units. They can be summarised as follows:</p>\n<p>EAA agricultural industry =</p>\n<p>NA agricultural branch</p>\n<p>- Production units providing associated agricultural services other than agricultural contract work (i.e. the operation of irrigation systems)</p>\n<p>+ Agricultural separable secondary activities of units whose principal activity is not agricultural</p>\n<p>The NACE-classification (rev2) has been implemented by September 2011 in the ESA and in EAA.</p>",
+    "original_headers": [
+      "DATAFLOW",
+      "LAST UPDATE",
+      "freq",
+      "itm_newa",
+      "geo",
+      "TIME_PERIOD",
+      "OBS_VALUE",
+      "OBS_FLAG"
+    ],
+    "columns": [
+      {
+        "column_name": "DATAFLOW",
+        "header": "DATAFLOW",
+        "values_sample": [
+          "ESTAT:AACT_ALI01(1.0)"
+        ],
+        "value_stats": {
+          "num_values": 4414,
+          "max_length": 21,
+          "min_length": 21,
+          "avg_length": 21.0,
+          "most_common_values": [
+            "ESTAT:AACT_ALI01(1.0)"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "Identifier for the dataset version and source, indicating the specific data flow, particularly from the European Statistical Agency.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "LAST UPDATE",
+        "header": "LAST UPDATE",
+        "values_sample": [
+          "16/12/24 11:00:00"
+        ],
+        "value_stats": {
+          "num_values": 4414,
+          "max_length": 17,
+          "min_length": 17,
+          "avg_length": 17.0,
+          "most_common_values": [
+            "16/12/24 11:00:00"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The date and time when the dataset was last updated, typically formatted as 'DD/MM/YY HH:MM:SS'.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "freq",
+        "header": "freq",
+        "values_sample": [
+          "A"
+        ],
+        "value_stats": {
+          "num_values": 4414,
+          "max_length": 1,
+          "min_length": 1,
+          "avg_length": 1.0,
+          "most_common_values": [
+            "A"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The frequency of data collection, denoted by 'A' for annual data.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "itm_newa",
+        "header": "itm_newa",
+        "values_sample": [
+          "40000",
+          "41000",
+          "42000"
+        ],
+        "value_stats": {
+          "num_values": 4414,
+          "max_length": 5,
+          "min_length": 5,
+          "avg_length": 5.0,
+          "most_common_values": [
+            "40000",
+            "41000",
+            "42000"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "A code representing specific agricultural income indicators or categories within the dataset, such as IND_A_EURO, RFI_AWU_CLV, or numerical codes like '40000', '41000', and '42000', related to various agricultural activities or metrics.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "geo",
+        "header": "geo",
+        "values_sample": [
+          "SE",
+          "EU",
+          "EL",
+          "LT",
+          "SK",
+          "NL",
+          "EA19",
+          "LV",
+          "AT",
+          "BE"
+        ],
+        "value_stats": {
+          "num_values": 4414,
+          "max_length": 14,
+          "min_length": 2,
+          "avg_length": 2.61,
+          "most_common_values": [
+            "BE",
+            "DK",
+            "ES",
+            "FR",
+            "LU",
+            "SE",
+            "UK",
+            "FI",
+            "IT",
+            "PT",
+            "MT",
+            "CH",
+            "NL",
+            "NO",
+            "EL",
+            "AT",
+            "IE",
+            "DE",
+            "EA",
+            "EA11"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The 'geo' column represents the geographical area or region associated with the data, using standardized country codes. These codes denote specific countries or regions, such as 'RO' for Romania, 'EL' for Greece, 'DK' for Denmark, 'DE' for Germany, 'CH' for Switzerland, 'HR' for Croatia, 'FI' for Finland, and various configurations of the European Union like 'EU15', 'EU25', and 'EA' for the Euro Area.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "TIME_PERIOD",
+        "header": "TIME_PERIOD",
+        "values_sample": [
+          "2004",
+          "2001",
+          "2020",
+          "1974",
+          "1977",
+          "1976",
+          "1998",
+          "2014",
+          "1984",
+          "1997"
+        ],
+        "value_stats": {
+          "num_values": 4414,
+          "max_length": 4,
+          "min_length": 4,
+          "avg_length": 4.0,
+          "most_common_values": [
+            "2007",
+            "2008",
+            "2009",
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2005",
+            "2006",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024"
+          ]
+        },
+        "metadata_description": "The period of time or point in time to which the measured observation refers.",
+        "llm_description": "The year or time period to which the observation value pertains and was recorded.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "OBS_VALUE",
+        "header": "OBS_VALUE",
+        "values_sample": [
+          "61.59",
+          "1.12",
+          "4062.04",
+          "3.49",
+          "18.45",
+          "178.16",
+          "2615.36",
+          "601.60",
+          "78.42",
+          "50.99"
+        ],
+        "value_stats": {
+          "num_values": 4408,
+          "max_length": 8,
+          "min_length": 4,
+          "avg_length": 5.79,
+          "most_common_values": [
+            "0.00",
+            "5.04",
+            "4.57",
+            "15.00",
+            "138.00",
+            "11.00",
+            "12.00",
+            "0.60",
+            "0.47",
+            "0.62",
+            "156.94",
+            "4.30",
+            "4.20",
+            "18.94",
+            "0.28",
+            "150.48",
+            "3.80",
+            "3.53",
+            "5.14",
+            "4384.72"
+          ]
+        },
+        "metadata_description": "The value, at a particular period, of a particular variable.",
+        "llm_description": "The observed value representing various economic indicators, including the labor input index, agricultural income, and agricultural labor input, as well as the percentage of enterprises reporting specific reasons for financing outcomes, for a given time period and geographical area. Agricultural labor input is measured in thousands of annual work units.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "OBS_FLAG",
+        "header": "OBS_FLAG",
+        "values_sample": [
+          "e",
+          "z"
+        ],
+        "value_stats": {
+          "num_values": 126,
+          "max_length": 1,
+          "min_length": 1,
+          "avg_length": 1.0,
+          "most_common_values": [
+            "e",
+            "z"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "Flags indicating special conditions or annotations related to the observation, such as 'e' for estimated values, 'd' for data derived from different sources, and 'z' for other specific notes.",
+        "semantic_annotation": null
+      }
+    ],
+    "metadata_description": true,
+    "llm_spatial_coverage": "The dataset covers various European countries and regions, including Sweden (SE), European Union (EU), Greece (EL), Lithuania (LT), Slovakia (SK), Netherlands (NL), Euro area (EA19), Latvia (LV), Austria (AT), and Belgium (BE)."
+  }
+]

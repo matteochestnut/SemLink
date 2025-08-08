@@ -1,0 +1,136 @@
+id: https://w3id.org/eurostat-schema
+name: eurostat-schema
+title: Eurostat Dataset Schema
+description: A schema for a Eurostat dataset including various biological entities.
+prefixes:
+  linkml: https://w3id.org/linkml/
+  core: http://w3id.org/ontogpt/core/
+default_range: string
+imports:
+- linkml:types
+- core
+classes:
+  NamedEntity:
+    description: A base class for named entities
+  Document:
+    is_a: NamedEntity
+    description: A document representing a dataset
+  Chemical:
+    is_a: NamedEntity
+    description: A chemical entity
+    attributes:
+      meshID:
+        description: Identifier from the MeSH database for a chemical substance.
+        range: string
+        examples:
+        - MESH_D002953
+        - MESH_C110286
+      chebiID:
+        description: Identifier from the ChEBI database for a chemical substance.
+        range: string
+        examples:
+        - CHEBI_10095
+        - CHEBI_53227
+  Cofactor:
+    is_a: NamedEntity
+    description: A cofactor entity
+    attributes:
+      chebiID:
+        description: Identifier from the ChEBI database for a cofactor.
+        range: string
+        examples:
+        - CHEBI_60242
+        - CHEBI_28938
+  Gene:
+    is_a: NamedEntity
+    description: A gene entity
+    attributes:
+      type.3:
+        description: Binary classification indicating protein-coding status.
+        range: string
+        examples:
+        - protein-coding
+        - not protein-coding
+      ensemblID:
+        description: Unique identifier for a gene in the Ensembl database.
+        range: string
+        examples:
+        - ENSG00000250732
+        - ENSG00000198535
+      type:
+        description: Primary classification of the gene.
+        range: string
+        examples:
+        - IG_C_pseudogene
+        - TR_J_pseudogene
+      type.2:
+        description: Binary classification indicating protein-coding status.
+        range: string
+        examples:
+        - protein-coding
+        - not protein-coding
+      type.4:
+        description: Reserved for future data or additional classifications.
+        range: string
+        examples:
+        - ''
+      EntrezID:
+        description: Unique identifier for a gene in the Entrez Gene database.
+        range: integer
+        examples:
+        - 729747
+        - 100132332
+      type.1:
+        description: Secondary classification of the gene.
+        range: string
+        examples:
+        - protein-coding
+        - pseudogene
+  Phenotype:
+    is_a: NamedEntity
+    description: A phenotype entity
+    attributes:
+      hpoID:
+        description: Identifier from the Human Phenotype Ontology (HPO).
+        range: string
+        examples:
+        - HP_0009376
+        - HP_0003910
+      umls:
+        description: Identifier from the Unified Medical Language System (UMLS).
+        range: string
+        examples:
+        - 64217002
+        - P59.9
+  Protein:
+    is_a: NamedEntity
+    description: A protein entity
+    attributes:
+      proID:
+        description: Unique identifier for proteins in the Protein Ontology (PRO).
+        range: string
+        examples:
+        - PR_Q9BU19
+        - PR_O75054
+      ensemblID:
+        description: Unique identifier for a protein in the Ensembl database.
+        range: string
+        examples:
+        - ENSP00000395114
+        - ENSP00000294753
+      uniprotID:
+        description: Unique identifier for proteins in the UniProt database.
+        range: string
+        examples:
+        - Q8VDQ1
+        - P0ADB1
+  Catalyst:
+    is_a: NamedEntity
+    description: A catalyst entity
+    attributes:
+      chebiID:
+        description: Identifier from the ChEBI database for a catalyst.
+        range: string
+        examples:
+        - CHEBI_90779
+        - CHEBI_75913

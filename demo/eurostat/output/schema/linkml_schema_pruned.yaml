@@ -1,0 +1,124 @@
+id: https://w3id.org/eurostat-schema
+name: eurostat-dataset-schema
+title: Eurostat Dataset Schema
+description: A schema for a Eurostat dataset, capturing various economic indicators
+  and metadata.
+prefixes:
+  linkml: https://w3id.org/linkml/
+  core: http://w3id.org/ontogpt/core/
+default_range: string
+imports:
+- linkml:types
+- core
+classes:
+  Document:
+    is_a: NamedEntity
+    description: A document representing a Eurostat dataset
+    attributes:
+      reason:
+        description: Reasons for partial or lack of success in obtaining equity finance
+        range: string
+        examples:
+        - CON
+        - DEB
+        - DEV
+        - EXC
+        - INA
+        - OTH
+      geo:
+        description: The geographical area or region associated with the data
+        range: string
+        examples:
+        - SE
+        - EU
+        - EL
+        - LT
+        - SK
+        - NL
+        - EA19
+        - LV
+        - AT
+        - BE
+      OBS_FLAG:
+        description: Flags indicating special conditions or annotations related to
+          the observation
+        range: string
+        examples:
+        - e
+        - z
+      freq:
+        description: The frequency of data collection
+        range: string
+        examples:
+        - A
+      TIME_PERIOD:
+        description: The year or time period to which the observation value pertains
+        range: integer
+        examples:
+        - 2004
+        - 2001
+        - 2020
+        - 1974
+        - 1977
+        - 1976
+        - 1998
+        - 2014
+        - 1984
+        - 1997
+      DATAFLOW:
+        description: Identifier for the dataset version and source
+        range: string
+        examples:
+        - ESTAT:AACT_ALI01(1.0)
+      OBS_VALUE:
+        description: The observed value representing various economic indicators
+        range: float
+        examples:
+        - 61.59
+        - 1.12
+        - 4062.04
+        - 3.49
+        - 18.45
+        - 178.16
+        - 2615.36
+        - 601.6
+        - 78.42
+        - 50.99
+      itm_newa:
+        description: A code representing specific agricultural income indicators or
+          categories
+        range: string
+        examples:
+        - '40000'
+        - '41000'
+        - '42000'
+      LAST_UPDATE:
+        description: The date and time when the dataset was last updated
+        range: string
+        examples:
+        - 16/12/24 11:00:00
+      enterpr:
+        description: Type of enterprise
+        range: string
+        examples:
+        - HG
+        - OTH
+        - TOTAL
+        - YHG
+      unit:
+        description: The unit of measurement for the data
+        range: string
+        examples:
+        - PC
+      nace_r2:
+        description: NACE Rev. 2 classification sections
+        range: string
+        examples:
+        - B-E
+        - B-N_X_K
+        - F
+        - G-I_L_N
+        - J
+        - M
+  NamedEntity:
+    description: A base class for named entities

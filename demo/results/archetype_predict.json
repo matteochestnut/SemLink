@@ -1,0 +1,62 @@
+{
+    "SYSTEM: Please select the class from protein.uniprotid, protein.ensemblid, catalyst.chebiid, cofactor.chebiid, chemical.chebiid, chemical.meshid, phenotype.hpoid, gene.ensemblid, phenotype.umls, gene.entrezid, protein.proid, gene.type.1, gene.type.2, gene.type.4, gene.type.3, gene.type which best describes the context. Please respond only with the name of the class. \n Context: ['C0002902', 'C0240295', 'C0455792', 'C2733564', 'C4022079', 'D015477', '251651', 'C99064', 'H47.20', '2052', 'std: 1.37', 'mean: 6.9', 'mode: 8', 'median: 7.5', 'max: 8', 'min: 4', 'rolling-mean-window-4: [0.0]'] \n \n Response: \n": {
+        "response": "phenotype.umls",
+        "context": [
+            "C0002902",
+            "C0240295",
+            "C0455792",
+            "C2733564",
+            "C4022079",
+            "D015477",
+            "251651",
+            "C99064",
+            "H47.20",
+            "2052",
+            "std: 1.37",
+            "mean: 6.9",
+            "mode: 8",
+            "median: 7.5",
+            "max: 8",
+            "min: 4",
+            "rolling-mean-window-4: [0.0]"
+        ],
+        "ground_truth": "",
+        "correct": false,
+        "original_model_answer": "phenotype.umls",
+        "rules": false,
+        "prompt_hash": "0469f5d9da0bfdd39db8abf649894609",
+        "prompt_hash_count": 1,
+        "original_label": "",
+        "file+idx": "       Column_1    Column_2\n18295   D015477  HP_0012324\n7680   C0455792  HP_0030276\n32375  C4022079  HP_0100448\n23159    C99064  HP_0008443\n23791      2052  HP_0000201\n26757  C0240295  HP_0000347\n24033    251651  HP_0009733\n11756    H47.20  HP_0000648\n7969   C2733564  HP_0031152\n2189   C0002902  HP_0002323_0"
+    },
+    "SYSTEM: Please select the class from protein.uniprotid, protein.ensemblid, catalyst.chebiid, cofactor.chebiid, chemical.chebiid, chemical.meshid, phenotype.hpoid, gene.ensemblid, phenotype.umls, gene.entrezid, protein.proid, gene.type.1, gene.type.2, gene.type.4, gene.type.3, gene.type which best describes the context. Please respond only with the name of the class. \n Context: ['HP_0000201', 'HP_0000347', 'HP_0000648', 'HP_0002323', 'HP_0008443', 'HP_0009733', 'HP_0012324', 'HP_0030276', 'HP_0031152', 'HP_0100448', 'std: 0.0', 'mean: 10.0', 'mode: 10', 'median: 10.0', 'max: 10', 'min: 10', 'rolling-mean-window-4: [0.0]'] \n \n Response: \n": {
+        "response": "phenotype.hpoid",
+        "context": [
+            "HP_0000201",
+            "HP_0000347",
+            "HP_0000648",
+            "HP_0002323",
+            "HP_0008443",
+            "HP_0009733",
+            "HP_0012324",
+            "HP_0030276",
+            "HP_0031152",
+            "HP_0100448",
+            "std: 0.0",
+            "mean: 10.0",
+            "mode: 10",
+            "median: 10.0",
+            "max: 10",
+            "min: 10",
+            "rolling-mean-window-4: [0.0]"
+        ],
+        "ground_truth": "",
+        "correct": false,
+        "original_model_answer": "phenotype.hpoid",
+        "rules": false,
+        "prompt_hash": "21164233fda7dae997c8748340ea7321",
+        "prompt_hash_count": 1,
+        "original_label": "",
+        "file+idx": "       Column_1    Column_2\n18295   D015477  HP_0012324\n7680   C0455792  HP_0030276\n32375  C4022079  HP_0100448\n23159    C99064  HP_0008443\n23791      2052  HP_0000201\n26757  C0240295  HP_0000347\n24033    251651  HP_0009733\n11756    H47.20  HP_0000648\n7969   C2733564  HP_0031152\n2189   C0002902  HP_0002323_1"
+    }
+}

@@ -1,0 +1,937 @@
+[
+  {
+    "file_name": "ENSEMBL_GENE_ENTREZ_GENE_MAP.tsv",
+    "file_path": "/Users/matteocastagna/Documents/Universit\u00e0/Assegno di ricerca 2024:2025/SemLink/demo/pkt/data/ENSEMBL_GENE_ENTREZ_GENE_MAP.tsv",
+    "title": "",
+    "llm_description": "This dataset maps Ensembl gene identifiers to Entrez gene identifiers, providing information on the types of genes and their coding status. It is likely used for genomic research and bioinformatics analyses to understand gene functions and classifications.",
+    "spatial_coverage_llm": null,
+    "temporal_start_date": null,
+    "temporal_end_date": null,
+    "data_themes": null,
+    "coverage_sector": null,
+    "original_headers": [
+      "Gene.ensemblID",
+      "Gene.EntrezID",
+      "Gene.type",
+      "Gene.type.1",
+      "Gene.type.2",
+      "Gene.type.3",
+      "Gene.type.4"
+    ],
+    "columns": [
+      {
+        "column_name": "Gene.ensemblID",
+        "header": "Gene.ensemblID",
+        "values_sample": [
+          "ENSG00000250732",
+          "ENSG00000198535",
+          "ENSG00000283758",
+          "ENSG00000011566",
+          "ENSG00000131462",
+          "ENSG00000230764",
+          "ENSG00000211765",
+          "ENSG00000227890",
+          "ENSG00000258641",
+          "ENSG00000223765"
+        ],
+        "value_stats": {
+          "num_values": 42288,
+          "max_length": 15,
+          "min_length": 15,
+          "avg_length": 15.0,
+          "most_common_values": [
+            "ENSG00000236362",
+            "ENSG00000223972",
+            "ENSG00000205457",
+            "ENSG00000261509",
+            "ENSG00000215269",
+            "ENSG00000183632",
+            "ENSG00000205456",
+            "ENSG00000245750",
+            "ENSG00000283196",
+            "ENSG00000248472",
+            "ENSG00000229140",
+            "ENSG00000137843",
+            "ENSG00000184154",
+            "ENSG00000231431",
+            "ENSG00000100181",
+            "ENSG00000255072",
+            "ENSG00000229425",
+            "ENSG00000168802",
+            "ENSG00000260081",
+            "ENSG00000115239"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The unique identifier for a gene in the Ensembl database, which is a comprehensive source for genomic data.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "Gene.EntrezID",
+        "header": "Gene.EntrezID",
+        "values_sample": [
+          "729747",
+          "100132332",
+          "100270899",
+          "574506",
+          "93621",
+          "106479759",
+          "5827",
+          "112267960",
+          "1833",
+          "107075122"
+        ],
+        "value_stats": {
+          "num_values": 42288,
+          "max_length": 9,
+          "min_length": 1,
+          "avg_length": 6.53,
+          "most_common_values": [
+            "102724101",
+            "102724127",
+            "102723713",
+            "727856",
+            "474152",
+            "645166",
+            "221178",
+            "100528062",
+            "100287596",
+            "2678",
+            "100996939",
+            "100129347",
+            "255027",
+            "50856",
+            "8778",
+            "100507420",
+            "2576",
+            "55486",
+            "64852",
+            "158135"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The unique identifier for a gene in the Entrez Gene database, which is a searchable database of genes.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "Gene.type",
+        "header": "Gene.type",
+        "values_sample": [
+          "IG_C_pseudogene",
+          "TR_J_pseudogene",
+          "sRNA",
+          "translated_unprocessed_pseudogene",
+          "TR_J_gene",
+          "transcribed_processed_pseudogene",
+          "IG_C_gene",
+          "IG_V_pseudogene",
+          "processed_pseudogene",
+          "transcribed_unprocessed_pseudogene"
+        ],
+        "value_stats": {
+          "num_values": 42288,
+          "max_length": 34,
+          "min_length": 4,
+          "avg_length": 13.7,
+          "most_common_values": [
+            "protein-coding",
+            "processed_pseudogene",
+            "lncRNA",
+            "miRNA",
+            "snRNA",
+            "unprocessed_pseudogene",
+            "miscRNA",
+            "transcribed_unprocessed_pseudogene",
+            "rRNA_pseudogene",
+            "snoRNA",
+            "transcribed_processed_pseudogene",
+            "IG_V_pseudogene",
+            "IG_V_gene",
+            "transcribed_unitary_pseudogene",
+            "TR_V_gene",
+            "unitary_pseudogene",
+            "TR_J_gene",
+            "polymorphic_pseudogene",
+            "rRNA",
+            "IG_D_gene"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The primary classification of the gene, indicating its specific type or function, such as pseudogene or protein-coding.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "Gene.type.1",
+        "header": "Gene.type.1",
+        "values_sample": [
+          "protein-coding",
+          "pseudogene",
+          "ncRNA",
+          "snRNA",
+          "snoRNA",
+          "other",
+          "rRNA",
+          "tRNA",
+          "scRNA"
+        ],
+        "value_stats": {
+          "num_values": 42288,
+          "max_length": 14,
+          "min_length": 4,
+          "avg_length": 10.79,
+          "most_common_values": [
+            "protein-coding",
+            "pseudogene",
+            "ncRNA",
+            "snoRNA",
+            "other",
+            "snRNA",
+            "rRNA",
+            "tRNA",
+            "scRNA"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "A secondary classification of the gene, providing additional context on its type, such as protein-coding or ncRNA.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "Gene.type.2",
+        "header": "Gene.type.2",
+        "values_sample": [
+          "protein-coding",
+          "not protein-coding"
+        ],
+        "value_stats": {
+          "num_values": 42288,
+          "max_length": 18,
+          "min_length": 14,
+          "avg_length": 16.14,
+          "most_common_values": [
+            "not protein-coding",
+            "protein-coding"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "A binary classification indicating whether the gene is protein-coding or not.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "Gene.type.3",
+        "header": "Gene.type.3",
+        "values_sample": [
+          "protein-coding",
+          "not protein-coding"
+        ],
+        "value_stats": {
+          "num_values": 42288,
+          "max_length": 18,
+          "min_length": 14,
+          "avg_length": 16.15,
+          "most_common_values": [
+            "not protein-coding",
+            "protein-coding"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "Another binary classification similar to Gene.type.2, indicating the protein-coding status of the gene.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "Gene.type.4",
+        "header": "Gene.type.4",
+        "values_sample": [],
+        "value_stats": {
+          "num_values": 0,
+          "max_length": 0,
+          "min_length": 0,
+          "avg_length": 0,
+          "most_common_values": []
+        },
+        "metadata_description": null,
+        "llm_description": "An empty column, possibly reserved for future data or additional classifications.",
+        "semantic_annotation": null
+      }
+    ],
+    "metadata_description": false,
+    "llm_spatial_coverage": "The dataset does not specify geographical areas, as it is focused on genomic data which is generally applicable across all human populations."
+  },
+  {
+    "file_name": "UNIPROT_PROTEIN_COFACTOR.tsv",
+    "file_path": "/Users/matteocastagna/Documents/Universit\u00e0/Assegno di ricerca 2024:2025/SemLink/demo/pkt/data/UNIPROT_PROTEIN_COFACTOR.tsv",
+    "title": "",
+    "llm_description": "This dataset contains information about proteins and their associated cofactors. Each entry links a specific protein, identified by a unique protein ID, to a cofactor, identified by a unique ChEBI ID. This dataset is likely used in biochemical research to study protein functions and interactions with various cofactors.",
+    "spatial_coverage_llm": null,
+    "temporal_start_date": null,
+    "temporal_end_date": null,
+    "data_themes": null,
+    "coverage_sector": null,
+    "original_headers": [
+      "Protein.proID",
+      "Cofactor.chebiID"
+    ],
+    "columns": [
+      {
+        "column_name": "Protein.proID",
+        "header": "Protein.proID",
+        "values_sample": [
+          "PR_Q9UQ88",
+          "PR_O60266",
+          "PR_Q9UJA9",
+          "PR_P05187",
+          "PR_P0DPI3",
+          "PR_O43548",
+          "PR_P06241",
+          "PR_Q08462",
+          "PR_O00587",
+          "PR_O75356"
+        ],
+        "value_stats": {
+          "num_values": 10455,
+          "max_length": 13,
+          "min_length": 3,
+          "avg_length": 4.13,
+          "most_common_values": [
+            "PR_",
+            "PR_P29401",
+            "PR_P51854",
+            "PR_Q9H0I9",
+            "PR_Q15493",
+            "PR_Q9Y6E0",
+            "PR_O00764",
+            "PR_P35228",
+            "PR_Q6UB28",
+            "PR_P50579",
+            "PR_Q2QD12",
+            "PR_Q96AT9",
+            "PR_O14832",
+            "PR_P53582",
+            "PR_P29474",
+            "PR_P29475",
+            "PR_Q3LXA3",
+            "PR_P27708",
+            "PR_Q6NUM9",
+            "PR_Q02880"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The 'Protein.proID' column contains unique identifiers for proteins, formatted as 'PR_' followed by a unique alphanumeric code. These identifiers are used to catalog proteins in the UniProt database and are aligned with the Protein Ontology (PRO), which provides a structured classification and representation of protein entities and their relationships.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "Cofactor.chebiID",
+        "header": "Cofactor.chebiID",
+        "values_sample": [
+          "CHEBI_60242",
+          "CHEBI_28938",
+          "CHEBI_49601",
+          "CHEBI_29108",
+          "CHEBI_29036",
+          "CHEBI_21137",
+          "CHEBI_17996",
+          "CHEBI_29034",
+          "CHEBI_83088",
+          "CHEBI_57925"
+        ],
+        "value_stats": {
+          "num_values": 10455,
+          "max_length": 12,
+          "min_length": 11,
+          "avg_length": 11.02,
+          "most_common_values": [
+            "CHEBI_30413",
+            "CHEBI_23378",
+            "CHEBI_18420",
+            "CHEBI_29105",
+            "CHEBI_29035",
+            "CHEBI_29108",
+            "CHEBI_57692",
+            "CHEBI_597326",
+            "CHEBI_29033",
+            "CHEBI_49883",
+            "CHEBI_60240",
+            "CHEBI_58210",
+            "CHEBI_38290",
+            "CHEBI_58937",
+            "CHEBI_24875",
+            "CHEBI_48828",
+            "CHEBI_29103",
+            "CHEBI_60344",
+            "CHEBI_57540",
+            "CHEBI_49601"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "A unique identifier for each cofactor, following the format 'CHEBI_' followed by a unique numeric code. This ID is used to reference specific chemical entities in the ChEBI database.",
+        "semantic_annotation": null
+      }
+    ],
+    "metadata_description": false,
+    "llm_spatial_coverage": "The dataset does not specify geographical areas, as it is focused on biochemical entities rather than geographical data. Therefore, it is assumed to have global relevance in the context of biochemical research."
+  },
+  {
+    "file_name": "UNIPROT_PROTEIN_CATALYST.tsv",
+    "file_path": "/Users/matteocastagna/Documents/Universit\u00e0/Assegno di ricerca 2024:2025/SemLink/demo/pkt/data/UNIPROT_PROTEIN_CATALYST.tsv",
+    "title": "",
+    "llm_description": "This dataset contains information linking proteins to their respective catalysts. Each entry associates a unique protein identifier with a unique chemical entity identifier, suggesting a relationship between the protein and the chemical catalyst it interacts with or is involved in catalyzing reactions.",
+    "spatial_coverage_llm": null,
+    "temporal_start_date": null,
+    "temporal_end_date": null,
+    "data_themes": null,
+    "coverage_sector": null,
+    "original_headers": [
+      "Protein.proID",
+      "Catalyst.chebiID"
+    ],
+    "columns": [
+      {
+        "column_name": "Protein.proID",
+        "header": "Protein.proID",
+        "values_sample": [
+          "PR_Q3LIE5",
+          "PR_O00142",
+          "PR_Q9NWX6",
+          "PR_Q96PN8",
+          "PR_P08237",
+          "PR_O00443",
+          "PR_Q99685",
+          "PR_O75879",
+          "PR_O95498",
+          "PR_Q14894"
+        ],
+        "value_stats": {
+          "num_values": 92197,
+          "max_length": 13,
+          "min_length": 3,
+          "avg_length": 4.55,
+          "most_common_values": [
+            "PR_",
+            "PR_Q8NCC3",
+            "PR_P08684",
+            "PR_O14734",
+            "PR_Q6UWP7",
+            "PR_Q08477",
+            "PR_Q6P1A2",
+            "PR_P78329",
+            "PR_Q9GZR5",
+            "PR_Q8NF37",
+            "PR_O00519",
+            "PR_P49327",
+            "PR_Q3SYC2",
+            "PR_P35354",
+            "PR_P53816",
+            "PR_P04798",
+            "PR_Q6P1J6",
+            "PR_P34913",
+            "PR_Q9NWW9",
+            "PR_Q7L5N7"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The 'Protein.proID' column contains unique identifiers for proteins, formatted as 'PR_' followed by a unique alphanumeric code. These identifiers are used to catalog proteins in the UniProt database and are aligned with the Protein Ontology (PRO), which provides a structured classification and representation of protein entities and their relationships.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "Catalyst.chebiID",
+        "header": "Catalyst.chebiID",
+        "values_sample": [
+          "CHEBI_90779",
+          "CHEBI_75913",
+          "CHEBI_75937",
+          "CHEBI_74254",
+          "CHEBI_64489",
+          "CHEBI_78597",
+          "CHEBI_78424",
+          "CHEBI_77097",
+          "CHEBI_326268",
+          "CHEBI_52333"
+        ],
+        "value_stats": {
+          "num_values": 92197,
+          "max_length": 12,
+          "min_length": 9,
+          "avg_length": 11.06,
+          "most_common_values": [
+            "CHEBI_15378",
+            "CHEBI_57540",
+            "CHEBI_57945",
+            "CHEBI_17976",
+            "CHEBI_16389",
+            "CHEBI_15377",
+            "CHEBI_15379",
+            "CHEBI_30616",
+            "CHEBI_29033",
+            "CHEBI_29034",
+            "CHEBI_456216",
+            "CHEBI_43474",
+            "CHEBI_30013",
+            "CHEBI_29999",
+            "CHEBI_61977",
+            "CHEBI_83421",
+            "CHEBI_33019",
+            "CHEBI_46858",
+            "CHEBI_82620",
+            "CHEBI_57287"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "A unique identifier for each chemical entity, following the ChEBI (Chemical Entities of Biological Interest) database format, which is used to catalog chemical compounds and their roles in biological processes.",
+        "semantic_annotation": null
+      }
+    ],
+    "metadata_description": false,
+    "llm_spatial_coverage": "Global"
+  },
+  {
+    "file_name": "UNIPROT_ACCESSION_PRO_ONTOLOGY_MAP.tsv",
+    "file_path": "/Users/matteocastagna/Documents/Universit\u00e0/Assegno di ricerca 2024:2025/SemLink/demo/pkt/data/UNIPROT_ACCESSION_PRO_ONTOLOGY_MAP.tsv",
+    "title": "",
+    "llm_description": "This dataset maps protein identifiers from the UniProt database to their corresponding protein ontology identifiers. It serves as a reference for researchers to understand the relationship between UniProt entries and their ontology classifications.",
+    "spatial_coverage_llm": null,
+    "temporal_start_date": null,
+    "temporal_end_date": null,
+    "data_themes": null,
+    "coverage_sector": null,
+    "original_headers": [
+      "Protein.uniprotID",
+      "Protein.proID"
+    ],
+    "columns": [
+      {
+        "column_name": "Protein.uniprotID",
+        "header": "Protein.uniprotID",
+        "values_sample": [
+          "Q8VDQ1",
+          "P0ADB1",
+          "Q3E732",
+          "Q9SEZ6",
+          "Q8NEM1",
+          "P77495",
+          "P91494",
+          "O35205",
+          "Q8C1D8",
+          "Q56A55"
+        ],
+        "value_stats": {
+          "num_values": 100855,
+          "max_length": 10,
+          "min_length": 6,
+          "avg_length": 6.02,
+          "most_common_values": [
+            "Q20893",
+            "Q8K2V1",
+            "Q8W4M7",
+            "Q8VI21",
+            "Q5ZLG9",
+            "Q8VC82",
+            "F4JYE9",
+            "Q9LFW0",
+            "Q14BB9",
+            "P70452",
+            "Q16629",
+            "Q9Z2E4",
+            "P03470",
+            "P60755",
+            "Q9U7D5",
+            "P0DN26",
+            "Q9VZW5",
+            "Q9LJI5",
+            "Q9LMN7",
+            "P59164"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "This column contains unique identifiers for proteins as listed in the UniProt database. UniProt is a comprehensive resource for protein sequence and functional information.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "Protein.proID",
+        "header": "Protein.proID",
+        "values_sample": [
+          "PR_A5X7A0",
+          "PR_Q86T13",
+          "PR_P45970",
+          "PR_Q8BHP2",
+          "PR_O94716",
+          "PR_P55288",
+          "PR_Q63413",
+          "PR_Q8N336",
+          "PR_P61355",
+          "PR_P08425"
+        ],
+        "value_stats": {
+          "num_values": 100855,
+          "max_length": 13,
+          "min_length": 9,
+          "avg_length": 9.02,
+          "most_common_values": [
+            "PR_Q20893",
+            "PR_Q8K2V1",
+            "PR_Q8W4M7",
+            "PR_Q8VI21",
+            "PR_Q5ZLG9",
+            "PR_Q8VC82",
+            "PR_F4JYE9",
+            "PR_Q9LFW0",
+            "PR_Q14BB9",
+            "PR_P70452",
+            "PR_Q16629",
+            "PR_Q9Z2E4",
+            "PR_P03470",
+            "PR_P60755",
+            "PR_Q9U7D5",
+            "PR_P0DN26",
+            "PR_Q9VZW5",
+            "PR_Q9LJI5",
+            "PR_Q9LMN7",
+            "PR_P59164"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The 'Protein.proID' column contains unique identifiers for proteins, formatted as 'PR_' followed by a unique alphanumeric code. These identifiers are used to catalog proteins in the UniProt database and are aligned with the Protein Ontology (PRO), which provides a structured classification and representation of protein entities and their relationships.",
+        "semantic_annotation": null
+      }
+    ],
+    "metadata_description": false,
+    "llm_spatial_coverage": "The dataset does not specify geographical areas as it pertains to protein data, which is universal and not limited to specific regions."
+  },
+  {
+    "file_name": "MESH_CHEBI_MAP.tsv",
+    "file_path": "/Users/matteocastagna/Documents/Universit\u00e0/Assegno di ricerca 2024:2025/SemLink/demo/pkt/data/MESH_CHEBI_MAP.tsv",
+    "title": "",
+    "llm_description": "This dataset contains mappings between chemical identifiers from two different chemical databases: MeSH (Medical Subject Headings) and ChEBI (Chemical Entities of Biological Interest). Each row represents a unique mapping between a MeSH chemical identifier and a corresponding ChEBI identifier, facilitating cross-referencing between these two databases.",
+    "spatial_coverage_llm": null,
+    "temporal_start_date": null,
+    "temporal_end_date": null,
+    "data_themes": null,
+    "coverage_sector": null,
+    "original_headers": [
+      "Chemical.meshID",
+      "Chemical.chebiID"
+    ],
+    "columns": [
+      {
+        "column_name": "Chemical.meshID",
+        "header": "Chemical.meshID",
+        "values_sample": [
+          "MESH_D002953",
+          "MESH_C110286",
+          "MESH_C015330",
+          "MESH_D011506",
+          "MESH_C081581",
+          "MESH_D044262",
+          "MESH_C010078",
+          "MESH_C058807",
+          "MESH_C492921",
+          "MESH_D001973"
+        ],
+        "value_stats": {
+          "num_values": 14262,
+          "max_length": 15,
+          "min_length": 12,
+          "avg_length": 12.15,
+          "most_common_values": [
+            "MESH_C066286",
+            "MESH_D014364",
+            "MESH_C010317",
+            "MESH_D002331",
+            "MESH_D000040",
+            "MESH_D010972",
+            "MESH_D011099",
+            "MESH_C019403",
+            "MESH_D012266",
+            "MESH_D009655",
+            "MESH_C011080",
+            "MESH_C066730",
+            "MESH_D001285",
+            "MESH_D007294",
+            "MESH_D005001",
+            "MESH_C003800",
+            "MESH_C023872",
+            "MESH_D013578",
+            "MESH_C054920",
+            "MESH_D007052"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "This column contains identifiers from the MeSH database, which is used for indexing articles for PubMed and other NLM databases. Each identifier corresponds to a specific chemical substance.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "Chemical.chebiID",
+        "header": "Chemical.chebiID",
+        "values_sample": [
+          "CHEBI_10095",
+          "CHEBI_53227",
+          "CHEBI_75845",
+          "CHEBI_40407",
+          "CHEBI_62266",
+          "CHEBI_65015",
+          "CHEBI_90227",
+          "CHEBI_72953",
+          "CHEBI_23092",
+          "CHEBI_38300"
+        ],
+        "value_stats": {
+          "num_values": 14262,
+          "max_length": 12,
+          "min_length": 7,
+          "avg_length": 10.95,
+          "most_common_values": [
+            "CHEBI_28304",
+            "CHEBI_37671",
+            "CHEBI_61606",
+            "CHEBI_47381",
+            "CHEBI_18388",
+            "CHEBI_33229",
+            "CHEBI_53076",
+            "CHEBI_73012",
+            "CHEBI_71045",
+            "CHEBI_65480",
+            "CHEBI_27506",
+            "CHEBI_35547",
+            "CHEBI_16709",
+            "CHEBI_18313",
+            "CHEBI_25682",
+            "CHEBI_17826",
+            "CHEBI_73248",
+            "CHEBI_2976",
+            "CHEBI_18230",
+            "CHEBI_53394"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "This column contains identifiers from the ChEBI database, which provides information about molecular entities focused on 'small' chemical compounds. Each identifier corresponds to a specific chemical substance.",
+        "semantic_annotation": null
+      }
+    ],
+    "metadata_description": false,
+    "llm_spatial_coverage": "The dataset does not explicitly cover geographical areas as it is focused on chemical identifiers. However, MeSH and ChEBI databases are used internationally, suggesting a global coverage in terms of chemical information."
+  },
+  {
+    "file_name": "STRING_PRO_ONTOLOGY_MAP.tsv",
+    "file_path": "/Users/matteocastagna/Documents/Universit\u00e0/Assegno di ricerca 2024:2025/SemLink/demo/pkt/data/STRING_PRO_ONTOLOGY_MAP.tsv",
+    "title": "",
+    "llm_description": "This dataset maps Ensembl protein identifiers to their corresponding PRO (Protein Ontology) identifiers. It serves as a reference for researchers to cross-reference protein data between these two databases.",
+    "spatial_coverage_llm": null,
+    "temporal_start_date": null,
+    "temporal_end_date": null,
+    "data_themes": null,
+    "coverage_sector": null,
+    "original_headers": [
+      "Protein.ensemblID",
+      "Protein.proID"
+    ],
+    "columns": [
+      {
+        "column_name": "Protein.ensemblID",
+        "header": "Protein.ensemblID",
+        "values_sample": [
+          "ENSP00000395114",
+          "ENSP00000294753",
+          "ENSP00000238508",
+          "ENSP00000369146",
+          "ENSP00000424607",
+          "ENSP00000470879",
+          "ENSP00000397483",
+          "ENSP00000325333",
+          "ENSP00000311925",
+          "ENSP00000378861"
+        ],
+        "value_stats": {
+          "num_values": 28795,
+          "max_length": 15,
+          "min_length": 15,
+          "avg_length": 15.0,
+          "most_common_values": [
+            "ENSP00000435370",
+            "ENSP00000431822",
+            "ENSP00000434440",
+            "ENSP00000342886",
+            "ENSP00000215730",
+            "ENSP00000332498",
+            "ENSP00000308292",
+            "ENSP00000276123",
+            "ENSP00000478399",
+            "ENSP00000484951",
+            "ENSP00000217289",
+            "ENSP00000408949",
+            "ENSP00000222481",
+            "ENSP00000394496",
+            "ENSP00000367638",
+            "ENSP00000500004",
+            "ENSP00000268720",
+            "ENSP00000221801",
+            "ENSP00000449716",
+            "ENSP00000421863"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "This column contains unique identifiers assigned by the Ensembl database to specific protein sequences. These identifiers are used to track and reference proteins in genomic studies.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "Protein.proID",
+        "header": "Protein.proID",
+        "values_sample": [
+          "PR_Q9BU19",
+          "PR_O75054",
+          "PR_A0A0B4J240",
+          "PR_Q92796",
+          "PR_Q96BQ1",
+          "PR_P19256",
+          "PR_Q8N5J4",
+          "PR_Q9BXC9",
+          "PR_Q8NEK8",
+          "PR_O60879"
+        ],
+        "value_stats": {
+          "num_values": 28795,
+          "max_length": 13,
+          "min_length": 9,
+          "avg_length": 9.05,
+          "most_common_values": [
+            "PR_Q99943",
+            "PR_O00299",
+            "PR_Q9P1U0",
+            "PR_Q9GZK4",
+            "PR_O75752",
+            "PR_P35222",
+            "PR_Q12899",
+            "PR_Q9BSV6",
+            "PR_P62805",
+            "PR_Q9GZK7",
+            "PR_P67870",
+            "PR_P43628",
+            "PR_O95865",
+            "PR_O75175",
+            "PR_O15212",
+            "PR_Q13838",
+            "PR_P30531",
+            "PR_Q9NX02",
+            "PR_P46781",
+            "PR_Q7Z7F7"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "The 'Protein.proID' column contains unique identifiers for proteins, formatted as 'PR_' followed by a unique alphanumeric code. These identifiers are used to catalog proteins in the UniProt database and are aligned with the Protein Ontology (PRO), which provides a structured classification and representation of protein entities and their relationships.",
+        "semantic_annotation": null
+      }
+    ],
+    "metadata_description": false,
+    "llm_spatial_coverage": "The dataset does not specify geographical areas as it is focused on protein identifiers, which are universally applicable in biological research."
+  },
+  {
+    "file_name": "PHENOTYPE_HPO_MAP.tsv",
+    "file_path": "/Users/matteocastagna/Documents/Universit\u00e0/Assegno di ricerca 2024:2025/SemLink/demo/pkt/data/PHENOTYPE_HPO_MAP.tsv",
+    "title": "",
+    "llm_description": "This dataset maps medical phenotypes to their corresponding Human Phenotype Ontology (HPO) identifiers. It serves as a reference for linking clinical terms to standardized phenotype descriptions, facilitating research and clinical diagnostics.",
+    "spatial_coverage_llm": null,
+    "temporal_start_date": null,
+    "temporal_end_date": null,
+    "data_themes": null,
+    "coverage_sector": null,
+    "original_headers": [
+      "Phenotype.umls",
+      "Phenotype.hpoID"
+    ],
+    "columns": [
+      {
+        "column_name": "Phenotype.umls",
+        "header": "Phenotype.umls",
+        "values_sample": [
+          "64217002",
+          "P59.9",
+          "L75.0",
+          "C1849575",
+          "C0268307",
+          "C4280429",
+          "D001991",
+          "C0220723",
+          "C2168996",
+          "C4281741"
+        ],
+        "value_stats": {
+          "num_values": 38046,
+          "max_length": 17,
+          "min_length": 1,
+          "avg_length": 6.92,
+          "most_common_values": [
+            "C5473",
+            "TCGA",
+            "C3262",
+            "D013064",
+            "C5041",
+            "OMFAQ",
+            "C49",
+            "D003398",
+            "D009436",
+            "H53.5",
+            "D003117",
+            "D014202",
+            "E03.1",
+            "Q04.3",
+            "D012640",
+            "R42",
+            "171",
+            "D012607",
+            "C38057",
+            "MPN-SAF"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "This column contains unique identifiers from the Unified Medical Language System (UMLS) that represent specific medical phenotypes or conditions.",
+        "semantic_annotation": null
+      },
+      {
+        "column_name": "Phenotype.hpoID",
+        "header": "Phenotype.hpoID",
+        "values_sample": [
+          "HP_0009376",
+          "HP_0003910",
+          "HP_0002349",
+          "HP_0002885",
+          "HP_0011071",
+          "HP_0010910",
+          "HP_0000895",
+          "HP_0007063",
+          "HP_0045004",
+          "HP_0010193"
+        ],
+        "value_stats": {
+          "num_values": 38046,
+          "max_length": 10,
+          "min_length": 10,
+          "avg_length": 10.0,
+          "most_common_values": [
+            "HP_0002665",
+            "HP_0012539",
+            "HP_0003560",
+            "HP_0002888",
+            "HP_0030069",
+            "HP_0030692",
+            "HP_0012174",
+            "HP_0001367",
+            "HP_0009592",
+            "HP_0003040",
+            "HP_0006733",
+            "HP_0100615",
+            "HP_0012209",
+            "HP_0012324",
+            "HP_0008619",
+            "HP_0012325",
+            "HP_0006743",
+            "HP_0006779",
+            "HP_0100243",
+            "HP_0012189"
+          ]
+        },
+        "metadata_description": null,
+        "llm_description": "This column contains identifiers from the Human Phenotype Ontology (HPO), which are used to describe phenotypic abnormalities in a standardized manner.",
+        "semantic_annotation": null
+      }
+    ],
+    "metadata_description": false,
+    "llm_spatial_coverage": "The dataset does not specify geographical areas, but the use of UMLS and HPO suggests it is applicable globally, particularly in regions where these systems are utilized, such as the United States and Europe."
+  }
+]
