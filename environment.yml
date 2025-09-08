@@ -1,4 +1,4 @@
-name: archetype2
+name: semlink
 channels:
   - pytorch
   - conda-forge
