@@ -269,4 +269,4 @@ _, _, _ = join_dis.compute_distances_and_export_neo4j(
 
 ## 4. Related Repositories
 
-**[ArcheType](https://github.com/penfever/ArcheType)** – Module for semantic annotation.
+**[ArcheType](https://github.com/penfever/ArcheType)** – Module for semantic annotation. To download and place in the Src folder.
