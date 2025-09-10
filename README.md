@@ -56,6 +56,15 @@ rm miniconda.sh
 
 ```
 
+### For Windows
+
+```
+# PowerShell
+Invoke-WebRequest -Uri "https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe" -OutFile "miniconda.exe"
+.\miniconda.exe /InstallationType=JustMe /AddToPath=1 /S /D=%UserProfile%\miniconda3
+
+```
+
 After running `conda init`, you may need to close and reopen your terminal for the changes to take effect. You should see `(base)` at the beginning of your prompt, indicating the base Conda environment is active.
 
 ### Create and Activate the Environment
@@ -73,6 +82,8 @@ Once the environment is created, activate it with the following command:
 conda activate semlink
 
 ```
+
+If using Visual Studio Code, after opening the python notebook, select semlink as python kernel to execute the code.
 
 ### Verify the Installation
 
@@ -95,6 +106,18 @@ The pipeline consists of four main steps, executed in order to achieve the final
 2.  **Schema Generation:** The `schema_generator.py` module uses the processed data to generate a LinkML schema. This schema acts as a conceptual model, defining classes and attributes that represent the data. This step also leverages an LLM to suggest a schema based on column names and descriptions.
 3.  **Semantic Annotation:** The `semantic_annotation.py` module takes the processed data and the generated LinkML schema to semantically annotate each column. It maps each column to a specific class and attribute within the schema.
 4.  **Join Discovery and Graph Generation:** The final step, handled by `join_discoverer.py`, uses the semantic annotations to find potential joinable columns. It generates embeddings for each column and computes similarity metrics. The final output is a set of CSV files for use in a graph database like Neo4j, representing a graph of data nodes and their relationships.
+
+## Important Notes
+
+- The algorithms presented use the OpenAI API to generate column descriptions, annotations and more. An OpenAI API key is required. Create and .env file to store your API key as follow:
+
+```
+OPENAI_API_KEY="your-api-key"
+```
+
+ans save the .env file in the same directory that contains the src folder.
+
+- The [ArcheType](https://github.com/penfever/ArcheType) module needs to be downloaded from its repository, unpacked and placed in the src directory.
 
 ## Step 1: Data Loading and Preprocessing (`data_loader.py`)
 
